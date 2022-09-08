@@ -1,0 +1,226 @@
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.Prose {
+    display: grid;
+    grid-template-columns: [full-start] minmax(16px, 1fr) [main-start] minmax(0, 1142px) [main-end] minmax(16px, 1fr) [full-end];
+    grid-auto-rows: max-content;
+}
+
+.Prose > * {
+  grid-column: main;
+}
+
+.Prose-splash {
+    grid-column: full;
+}
+
+.content{
+    max-width: 1142px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+main{
+    flex-grow: 1;
+}
+
+header, footer{
+    width: 100%;
+    text-align: center;
+    font-size: 90px;    
+    background-color: rgb(221 255 255);
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: var(--font-Metropolis);
+    font-weight: 400;
+    overflow-y: scroll;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    resize: none;
+    background: none;
+}
+
+input {
+    font-family: inherit;
+}
+
+/* Стили для сайта */
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.h2{    
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;    
+}
+
+.font_big{    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.font{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    min-height: 542px;
+    background: url(../img/header_img.png) ;
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover; 
+}
+
+header>*{
+    padding: 0 16px;
+}
+
+header h1{
+    max-width: 816px;
+    margin: auto;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.header_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23.25px 16px 26.5px 16px;
+    background: rgba(255, 255, 255, 0.2);    
+    backdrop-filter: blur(20px);
+       
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.135em;
+    color: #FFFFFF;
+}
+
+.logo{
+    margin-right: 11.5px;
+    flex-shrink: 0;
+}
+
+.logo img{
+    width: 33px;    
+}
+
+.bg_smoke{
+    background: #F2F2F2;
+}
+
+.rancing_table {
+    width: 100%;
+}
+
+.rancing_table tbody{
+    display: flex;    
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+.rancing_table tr{
+    display: grid;
+    grid-template-columns: repeat(6, calc(16.67% - 16.67px));
+    column-gap: 20px;
+}
+
+.rancing_table tr:first-child td{
+    background-color: transparent;
+    padding: 0px;
+}
+
+.rancing_table td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 47px;
+    padding: 8px;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.rancing_table  .arrow.black::after{
+    content: url(../img/arrow_black.svg);
+    margin-left: 15px;    
+    width: 20px;
+    height: 20px;
+}
+
+.rancing_table  .arrow.green::after{
+    content: url(../img/arrow_green.svg);
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.rancing_table  .arrow.red::after{
+    content: url(../img/arrow_red.svg);
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
