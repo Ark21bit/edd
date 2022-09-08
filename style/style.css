@@ -170,6 +170,11 @@ header h1{
     background: #F2F2F2;
 }
 
+.table_box{
+    width: 100%;
+    overflow-x: auto;
+}
+
 .rancing_table {
     width: 100%;
 }
